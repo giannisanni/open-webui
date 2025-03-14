@@ -108,7 +108,7 @@
 
 		{#if $config?.license_metadata}
 			<div class="mb-2 text-xs">
-				{#if !$WEBUI_NAME.includes('Open WebUI')}
+				{#if !$WEBUI_NAME.includes('G-chat')}
 					<span class=" text-gray-500 dark:text-gray-300 font-medium">{$WEBUI_NAME}</span> -
 				{/if}
 
@@ -124,17 +124,17 @@
 					/>
 				</a>
 
-				<a href="https://twitter.com/OpenWebUI" target="_blank">
-					<img
-						alt="X (formerly Twitter) Follow"
-						src="https://img.shields.io/twitter/follow/OpenWebUI"
+<a href="https://twitter.com/G_chat" target="_blank">
+<img
+alt="X (formerly Twitter) Follow"
+src="https://img.shields.io/twitter/follow/G_chat"
 					/>
 				</a>
 
-				<a href="https://github.com/open-webui/open-webui" target="_blank">
-					<img
-						alt="Github Repo"
-						src="https://img.shields.io/github/stars/open-webui/open-webui?style=social&label=Star us on Github"
+<a href="https://github.com/g-chat/g-chat" target="_blank">
+<img
+alt="Github Repo"
+src="https://img.shields.io/github/stars/g-chat/g-chat?style=social&label=Star us on Github"
 					/>
 				</a>
 			</div>
@@ -151,7 +151,7 @@
 				class="text-xs text-gray-400 dark:text-gray-500">Copyright (c) {new Date().getFullYear()} <a
 					href="https://openwebui.com"
 					target="_blank"
-					class="underline">Open WebUI (Timothy Jaeryang Baek)</a
+					class="underline">G-chat</a
 				>
 All rights reserved.
 

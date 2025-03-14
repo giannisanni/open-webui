@@ -1,0 +1,21 @@
+services:
+  open-webui:
+    build:
+      context: .
+      args:
+        OLLAMA_BASE_URL: '/ollama'
+        NODE_OPTIONS: '--max-old-space-size=8192'
+      dockerfile: Dockerfile.local
+    container_name: open-webui
+    volumes:
+      - open-webui:/app/backend/data
+    ports:
+      - ${OPEN_WEBUI_PORT-3000}:8080
+    environment:
+      - 'OLLAMA_BASE_URL=${OLLAMA_BASE_URL}'
+      - 'WEBUI_SECRET_KEY='
+    restart: unless-stopped
+    # GPU support
+
+volumes:
+  open-webui: {}

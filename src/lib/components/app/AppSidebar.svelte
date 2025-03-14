@@ -25,8 +25,12 @@
 				}}
 			>
 				<img
-					src="/static/splash.png"
-					class="size-11 dark:invert p-0.5"
+src="/static/splash-dark.png"
+class="size-11 hidden dark:block p-0.5"
+/>
+<img
+src="/static/splash.png"
+class="size-11 block dark:hidden p-0.5"
 					alt="logo"
 					draggable="false"
 				/>

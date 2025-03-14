@@ -181,8 +181,12 @@
 					<img
 						id="logo"
 						crossorigin="anonymous"
-						src="{WEBUI_BASE_URL}/static/splash.png"
-						class=" w-6 rounded-full"
+src="{WEBUI_BASE_URL}/static/splash-dark.png"
+class="w-6 rounded-full hidden dark:block"
+/>
+<img
+src="{WEBUI_BASE_URL}/static/splash.png"
+class="w-6 rounded-full block dark:hidden"
 						alt="logo"
 					/>
 				</div>
