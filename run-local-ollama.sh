@@ -108,7 +108,9 @@ echo -e "   ${GREEN}${BOLD}WebUI Port:${NC} $(grep OPEN_WEBUI_PORT .env | cut -d
 echo
 
 # Run docker-compose with our custom configuration
-echo -e "${WHITE}${BOLD}Starting Open WebUI with local Ollama...${NC}"
+echo -e "${WHITE}${BOLD}Stopping existing container (if any)...${NC}"
+docker compose -f docker-compose.local-ollama.yaml down --remove-orphans
+echo -e "${WHITE}${BOLD}Starting Open WebUI with local Ollama (forcing build)...${NC}"
 # Set NODE_OPTIONS to increase memory limit for Node.js during build
 export NODE_OPTIONS="--max-old-space-size=8192"
 docker compose -f docker-compose.local-ollama.yaml up -d --build
